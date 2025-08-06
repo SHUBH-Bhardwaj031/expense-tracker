@@ -4,7 +4,7 @@ import Banner from "./Banner"
 export default function Header(){
     return (
       <div>   
-   <nav className="flex h-20 px-5 bg-gradient-to-tl from-[#030637] via-[#3c0753] to-[#720455] justify-between border-1 items-center text-lg text-white">
+   <nav className="flex h-20 px-5 bg-black justify-between items-center text-lg text-white">
  <div className="logo">   
 <span>Expense Tracker</span>
 </div>
@@ -17,13 +17,17 @@ export default function Header(){
 hoverColor={"hover:bg-red-800"}
  backgroundColor={"bg-blue-700"}
  text={"Login"}
+ clickfun={()=>{
+  console.log("Login clicked");
+ 
+ }}
 />
 
 </div>
 
 
    </nav>
-   <section className="bg-red-500 h-[450px]">
+   <section className="bg-gradient-to-r from-slate-800 to-teal-800 h-[450px]">
           <Banner />
    </section>
 
